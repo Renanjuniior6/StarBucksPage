@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/R.png" type="image/x-icon">
+    <title>Starbucks-page</title>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+
+    <img src="./assets/R.png" class="logo" alt="starbucks-logo" />
+
+    <div class="Content">
+        <div>
+            <h2>It's not just Coffee <br> it's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia unde illum nulla odio tenetur sint
+                quibusdam, fugiat voluptatum vero ipsa officia consectetur ipsum minima quas corrupti, autem neque
+                laborum expedita!</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="box-image">
+            <img src="./assets/thumb1.png" class="starbk-main" alt="coffe-cup" />
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./assets/thumb1.png" class="cups" onclick="changeImg('./assets/thumb1.png'); ChangeColor('#017143')">
+        <img src="./assets/R (2).png" class="cups" onclick="changeImg('./assets/R (2).png'); ChangeColor('#CD853F')" />
+        <img src="./assets/img2.png" class="cups" onclick="changeImg('./assets/img2.png'); ChangeColor('#d752b1')" />
+    </div>
+
+</body>
+
+<script>
+
+    let image = document.querySelector('.starbk-main')
+    let circle = document.querySelector('.circle')
+
+    function changeImg(adress) {
+
+        image.src = adress
+
+    }
+
+    function ChangeColor(color) {
+
+        circle.style.background = color
+
+    }
+
+</script>
+
+</html>
